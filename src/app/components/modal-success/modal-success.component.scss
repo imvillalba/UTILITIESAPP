@@ -1,0 +1,33 @@
+.spanTitle{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Title-content{
+  padding: 40px;
+  margin:50px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonLogin{
+  height: 46px;
+  width: 140px;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #A4DBDB;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 15%;
+  border:none;
+
+}
+.buttonLogin:hover{
+  background-color: #1EA49F;
+  color: white;
+  border-color:#655E5F;
+  cursor: pointer;
+  border:solid;
+}

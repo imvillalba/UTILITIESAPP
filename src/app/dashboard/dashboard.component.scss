@@ -1,0 +1,127 @@
+
+@mixin font-attributes {
+  font-family: 'Montserrat', sans-serif !important;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.background-utilities {
+  background-image: url('/assets/img/fondoDashboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.container3 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns:20% 60% 20%;
+  grid-template-rows: 1fr 4fr 1fr;
+  column-gap: 19px;
+}
+
+
+.content {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: #8f8a8b50;
+  border-radius: 20px 20px 0 0;
+  border: solid 4px;
+  border-color: #655E5F;
+}
+.list-content::-webkit-scrollbar-thumb {
+  background: rgb(16, 16, 16) !important;
+  border-radius: 4px !important;
+}
+
+.list-content{
+  background-color: white;
+  margin: 50px;
+  height: 400px;
+  width: 90%;
+  border: solid 3px;
+  border-color: black;
+  display: grid;
+  grid-template-columns:70% 30%;
+  grid-template-rows: 1fr 1fr;
+  overflow-y: scroll;
+
+}
+
+.recibo{
+  background-color: white;
+  grid-row: 1;
+  grid-column: 1;
+  border:solid 1px;
+  border-color:black;
+  display: grid;
+}
+.recibo2{
+  background-color: white;
+  grid-row: 2;
+  grid-column: 1;
+  border:solid 1px;
+  border-color:black;
+  display: grid;
+}
+.recibo3{
+  background-color: white;
+  grid-row: 3;
+  grid-column: 1;
+  border:solid 1px;
+  border-color:black;
+  display: grid;
+}
+
+.recibo-title{
+  span{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+
+.valor{
+  grid-row: 1;
+  grid-column: 2;
+  border:solid 1px;
+  border-color:black;
+  display: grid;
+  justify-content: center;
+  padding-top: 25px;
+}
+.valor2{
+  grid-row: 2;
+  grid-column: 2;
+  border:solid 1px;
+  border-color:black;
+  display: grid;
+  justify-content: center;
+  padding-top: 25px;
+}
+.valor3{
+  grid-row: 3;
+  grid-column: 2;
+  border:solid 1px;
+  border-color:black;
+  display: grid;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.spanTitle{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.spanSubTitle{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pseButton{
+  cursor: pointer;
+}

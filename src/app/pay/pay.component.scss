@@ -1,0 +1,126 @@
+
+@mixin font-attributes {
+  font-family: 'Montserrat', sans-serif !important;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.background-utilities {
+  background-image: url('/assets/img/fondoDashboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.container3 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns:25% 50% 25%;
+  grid-template-rows: 1fr 4fr 1fr;
+  column-gap: 19px;
+}
+
+
+.content {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: #ffffff;
+  border: solid 4px;
+  border-color: #655E5F;
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.spanTitle{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.spanSubTitle{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+.pse-image{
+  display: flex;
+  grid-row: 1;
+  grid-column: 1;
+  align-items: center;
+  justify-content: center;
+}
+.pse-pay{
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+}
+.line-pay-1{
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 60px ;
+  margin-left: 30px;
+  padding-bottom: 10px;
+
+}
+
+.line-pay-2{
+  grid-row: 2;
+  grid-column: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-left: 50px;
+}
+.line-pay-3{
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 30px;
+  padding-bottom: 10px;
+
+}
+.line-pay-4{
+  grid-row: 4;
+  grid-column: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-left: 50px;
+}
+
+.line-pay-5{
+  grid-row: 5;
+  grid-column: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-left: 50px;
+}
+
+.buttonLogin{
+  height: 46px;
+  width: 140px;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #1EA49F;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 60%;
+  border-color:#655E5F;
+  border-width: 2px;
+}
+
+.buttonLogin:hover{
+  background-color: #A4DBDB;
+  color: black;
+  border-color:#655E5F;
+  cursor: pointer;
+}

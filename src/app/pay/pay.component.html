@@ -1,0 +1,43 @@
+<div class="background-utilities">
+  <app-navbar></app-navbar>
+
+  <div class="left-background">
+    <div class="container3 overflow-y-auto " >
+      <div class="content">
+      <div class="pse-image">
+        <img matPrefix src="/assets/icon/botonPseAzul.png"  style="height:320px" class="m-l-40">
+      </div>
+      <div class="pse-pay">
+        <div class="line-pay-1">
+          <span class=" pl-30 full-w spanTitle">  TIPO CLIENTE : </span>
+        </div>
+        <div class="line-pay-2">
+          <mat-form-field appearance="outline">
+            <mat-label style="color: black;">Seleccione una opción</mat-label>
+            <mat-select disableRipple>
+              <mat-option value="1">Persona Natural</mat-option>
+              <mat-option value="2">Persona Juridica</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="line-pay-3">
+          <span class="pl-30 full-w spanTitle">  ELIGE TU BANCO :</span>
+        </div>
+        <div class="line-pay-4">
+          <mat-form-field appearance="outline">
+            <mat-label style="color: black;">Seleccione su banco</mat-label>
+            <mat-select style="color: black;" disableRipple>
+              <mat-option value="1">Banco de Bogotá</mat-option>
+              <mat-option value="2">Bancolombia</mat-option>
+              <mat-option value="3">Davivienda</mat-option>
+            </mat-select>
+        </mat-form-field>
+        </div>
+        <div class="line-pay-5 d-form-form d-flex justify-content-end">
+          <button class="buttonLogin" mat-button (click)="pagar()" mat-flat-button >CONTINUAR</button>
+        </div>
+      </div>
+      </div>
+
+  </div>
+</div>

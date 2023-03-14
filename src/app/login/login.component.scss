@@ -1,0 +1,172 @@
+@mixin font-attributes {
+  font-family: 'Montserrat', sans-serif !important;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.background-utilities {
+  background-color: #F3B9AF;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left-background {
+  width: 80%;
+  z-index: 0;
+  position: relative;
+}
+
+.left-background::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  clip-path: circle(50% at 20% 52%);
+  background-image: url('/assets/img/fondoMediaLuna.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container3 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns:30% 30% 30%;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  column-gap: 19px;
+}
+
+
+.content {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 3fr [col1-end] 2fr;
+}
+
+.welcome-card {
+  border-radius: 26px;
+  width: 500px;
+  padding: 33px 0;
+  grid-column: col1-end;
+}
+
+
+.tittle-content{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 50px;
+  font-weight: 700;
+  padding-left: 25%;
+}
+
+
+@media (max-width: 480px) {
+  .left-background {
+    width: 100%;
+  }
+  .left-background::before {
+    display: none;
+  }
+  .logo {
+    grid-column: 1;
+  }
+
+  .content {
+    grid-column: 1;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    margin: 16px;
+  }
+
+  .welcome-card {
+    width: 100%;
+    grid-column: 1;
+  }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .left-background {
+    width: 100%;
+  }
+  .left-background::before {
+    display: none;
+  }
+  .content {
+    grid-column: 1 / -1;
+  }
+
+  .welcome-card {
+    grid-column: 1;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+
+.form-cont{
+  grid-row: 3;
+  grid-column: 3;
+  padding-left: 50px;
+}
+
+.input-group{
+
+  width: 90%;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #828282;
+  border-radius: 5px;
+}
+
+.buttonLogin{
+  height: 46px;
+  width: 140px;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #1EA49F;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-right: 15%;
+  border-color:#655E5F;
+  border-width: 2px;
+}
+
+.buttonLogin:hover{
+  background-color: #A4DBDB;
+  color: black;
+  border-color:#655E5F;
+  cursor: pointer;
+}
+
+
+.input-title{
+  font-family: 'Montserrat', sans-serif !important;
+  color:black ;
+  background:white;
+  font-size: 22px !important;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.input-text{
+  font-family: 'Montserrat', sans-serif !important;
+  padding-left: 30px;
+  width: 90%;
+}

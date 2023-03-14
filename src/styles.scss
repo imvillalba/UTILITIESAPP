@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.d-flex{
+display: flex;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.full-w{
+  width: 100%;
+}
+.full-h{
+  height: 100%;
+}
+
+.height-50{
+  height: 50px;
+}
+.p-20{
+  padding: 20px;
+}
+.p-30{
+  padding: 30px;
+}
+
+.p-40{
+  padding: 40px;
+}
+
+.p-50{
+  padding: 50px;
+}
+.pl-30{
+  padding-left: 30px;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.m-l-40{
+  margin-left: 40px;
+}
+
+.m-t-15{
+  margin-top: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  overflow-y: scroll;
+  background: rgb(250, 247, 247);
+  box-shadow: inset 0 0 4px #707070;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 10px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgb(0, 0, 0);
+}
+/* Font color */
+input.mat-input-element {
+  color: rgb(0, 0, 0);
+  width: 90%;
+}
+.mat-select-value {
+  color: rgb(0, 0, 0) !important;
+}
+.mat-dialog-container {
+  box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+  background: #ffffff;
+  color:#655E5F;
+  border: solid 3px !important;
+  border-color: #655E5F;
+  border-radius: 10px !important;
+
+}
+

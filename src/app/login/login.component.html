@@ -1,0 +1,30 @@
+<div class="background-utilities">
+  <div class="left-background">
+    <div class="container3 overflow-y-auto " >
+      <div class="content">
+        <div class="card-container" style="">
+          <div class="welcome-card">
+                <p class="tittle-content"> UTILITIES </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-cont">
+            <mat-form-field class="input-group" appearance="outline" >
+              <mat-label class="input-title" style="">Usuario</mat-label>
+              <img  matPrefix src="/assets/icon/user.png">
+              <input  matInput formControlName="username" class="input-text" />
+            </mat-form-field>
+
+            <mat-form-field class="input-group" appearance="outline" >
+              <mat-label class="input-title" style="">Contraseña</mat-label>
+              <img matPrefix src="/assets/icon/padlock.png">
+              <input matInput formControlName="Contraseña" type="password" class="input-text"  />
+            </mat-form-field>
+
+            <div class="d-form-form d-flex justify-content-end">
+              <button class="buttonLogin" mat-button  mat-flat-button (click)="ingresar()">INGRESAR</button>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
